@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Website</title>
+
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200&display=swap" rel="stylesheet">
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Custom css link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="myFunction()">
+    
+
+    <div id="loader"></div>
+    <!-- header section start  -->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <header>
+        <!-- navbar sectio start  -->
+        <nav>
+            <div id="navbar">
+                <div id="logo">
+                     <a href="#"><span><i class="fas fa-camera"></i></span>PHOTO</a>
+                </div>
+                 <div class="hamburger">
+                    <i class="fas fa-bars navigate-btn" onclick="side_open()" id="open"></i>
+                    <i class="fas fa-times navigate-btn" onclick="side_close()" id="closed"></i>
+                 </div>
+            </div>
+        </nav>
+
+        <!-- navbar-section-end  -->
+
+
+        <!-- home-section-start  -->
+
+        <div id="home">
+            <div class="container"></div>
+            <div class="home-text">
+                <p>I am <span>Jitendra Verma </span> <br> A PhotoGrapher</p>
+                <br>
+                <h1>Photography is an austere and blazing poetry of the real.</h1>
+                <br>
+                <button class="btn" id="home-btn">See More</button>
+            </div>
+
+            <div id="slider">
+                <div class="side-bar">
+                  <ul>
+                      <li><a href="#home">HOME</a></li>
+                      <li><a href="./about/index.html">ABOUT</a></li>
+                      <li><a href="#">GALLERY</a></li>
+                      <li><a href="#">BLOG</a></li>
+                      <li><a href="#">CONTACT</a></li>
+                     </ul>  
+                  
+                  <div class="icon-box">
+                    <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>   
+                    <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>   
+                    <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>   
+                    <a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>   
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- home-section-end  --> 
+    </header>
+
+    <!-- header section end  -->
+
+
+
+
+
+    <!-- about-section-start  -->
+<main>
+    <section>
+        <div id="about">
+            <div class="about-text">
+                <h1>About <span>Me</span></h1>
+            </div>
+
+            <div class="left-about-box">
+                <figure>
+                    <img src="media/pexels-hasibullah-zhowandai-1582920.jpg" alt="">
+                </figure>
+            </div>
+            <div class="right-about-box">
+                <h3>Hii guys, I am <span>Jitendra Verma </span> , A Photograpgher, from the James Street, Scotland. I am mainly a wildlife photographer.</h3>
+                <br>
+                <p><em>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fugit modi quidem in temporibus repellendus dolorem provident, minus voluptatem nemo culpa nulla asperiores, veritatis aliquam.</em></p>
+                <br>
+                <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam assumenda, cum sapiente impedit et.</em></p>
+                <br>
+                <button class="btn" id="about-btn">Know More</button>
+            </div>
+        </div>
+    </section>
+ <!-- about-section-end  -->
+   
+
+
+
+
+
+
+ <!-- instagram-section-start  -->
+
+ <section>
+    <div id="insta">
+        <div class="insta-text">
+            <h1>Follow Me On<span> Instagram</span></h1>
+            <p><a href="http://www.instagram.com" target="_blank">@Mr.JitendraVerma</a></p>
+        </div>
+        <div class="insta-body">
+            <div class="insta-box" onclick="show()">
+                <figure>
+                    <img src="media/img-1.jpg" alt="">
+                        <div class="overlay">
+                            <h1>ALASKA</h1>
+                            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident?</p>
+                        </div>
+                </figure>
+            </div>
+            <div class="insta-box" onclick="show()">
+                <figure>
+                    <img src="media/img-2.jpg" alt="">
+                        <div class="overlay">
+                            <h1>AMAZON</h1>
+                            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident?</p>
+                        </div>
+                </figure>
+            </div>
+            <div class="insta-box" onclick="show()">
+                <figure>
+                    <img src="media/img-3.jpg" alt="">
+                        <div class="overlay">
+                            <h1>EUROPE</h1>
+                            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident?</p>
+                        </div>
+                </figure>
+            </div>
+        </div>
+ </section>
+
+ <!-- instagram-section-end  -->
+
+
+
+<!-- address-section-start  -->
+ <section>
+    <div id="address-section">
+        <div class="address">
+            <div class="address-text">
+                <h1>Get In <span> Touch</span></h1>
+            </div>
+            <div class="address-box">
+                 <a href="tel:+" target="_blank">
+                    <i class="fas fa-phone"></i>
+                    <br><br>
+                    <p>09875745432, 8650282055</p>
+                </a>
+            </div>
+            <div class="address-box">
+                <a href="mailto:" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                    <br><br>
+                    <p>rohitmathur8273@gmail.com</p>
+                    <p>johnofficial@gmail.com</p>
+                </a>
+            </div>
+            <div class="address-box">
+                <a href="https://goo.gl/maps/jcqT4RaDmd14Z6Qj9" target="_blank">
+                    <i class="far fa-address-card"></i>
+                    <br><br>
+                    <p>Sector 62, Main Building, Noida</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+ </section>
+<!-- address-section-end  -->
+
+
+<div id="image-overlay" style="display: none;">
+    <div class="img-cross-box">
+        <i class="fas fa-times navigate-btn" onclick="side_close()" id="overlay-closed"></i>
+    </div>
+    <div id="img-slide">
+        <div id="img-slider-box">
+            <div class="img-box">
+                <img src="media/img-1.jpg" alt="">
+            </div>
+            <div class="img-box">
+                <img src="media/img-2.jpg" alt="">
+            </div>
+            <div class="img-box">
+                <img src="media/img-3.jpg" alt="">
+            </div> 
+        </div>
+
+
+        <div class="indicator-box">
+            <div id="left-btn" onclick="previous()">&#8249;</div>
+            <div id="right-btn" onclick="next()">&#8250;</div>
+        </div>
+    </div>
+</div>
+</main>
+
+
+
+
+<!-- footer-section-start  -->
+<footer>
+    <div id="footer">
+        <div class="left-footer">
+                <h2>Jitendra Verma </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cupiditate amet accusamus iusto nihil, ullam officiis nulla quisquam debitis, explicabo voluptates repudiandae eius, hic pariatur! Quisquam sapiente doloremque minima quos.</p>
+        </div>
+        <div class="right-footer">
+            <h3>Subscribe To My Newsletter</h3>
+            <div class="input-box">
+                <input type="email" name="" id="subscribe-box" placeholder="Enter Email">
+                <label for="subscribe-box">Subscribe</label>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, cumque.</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright 2023.Created By <span> Shyam  Sundar</span>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- footer-section-end  -->
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom javascript link  -->
+
+<script src="script.js"></script>
+
+</div>
+</body>
+</html>
